@@ -1,0 +1,44 @@
+:root {
+  --color-bg: #0F0D12;
+  --color-surface: #18141D;
+  --color-surface-elevated: #221B29;
+  --color-border: #352C3B;
+  --color-text-primary: #D8D2DB;
+  --color-text-muted: #8F8896;
+  --color-accent: #76568F;
+  --color-accent-hover: #9270A8;
+  --color-gold: #B29A52;
+  --font-body: 'Manrope', sans-serif;
+  --font-heading: 'Unbounded', 'Manrope', sans-serif;
+  color-scheme: dark;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent-hover);
+  outline-offset: 3px;
+}
+
+body {
+  min-width: 320px;
+
+  background-color: var(--color-bg, #0F0D12);
+  color: var(--color-text-primary, #D8D2DB);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+input, textarea, select, button {
+  color: inherit;
+}
+
+a {
+  color: inherit;
+}
