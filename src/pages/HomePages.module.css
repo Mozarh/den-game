@@ -52,6 +52,33 @@
     margin: 0;
 }
 
+.home__progress {
+    display: block;
+    width: min(100%, 360px);
+    height: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: var(--color-border);
+    accent-color: var(--color-accent);
+}
+
+.home__progress::-webkit-progress-bar {
+    background-color: var(--color-border);
+    border-radius: 999px;
+}
+
+.home__progress::-webkit-progress-value {
+    background-color: var(--color-accent);
+    border-radius: 999px;
+}
+
+.home__progress::-moz-progress-bar {
+    background-color: var(--color-accent);
+    border-radius: 999px;
+}
+
 @media (max-width: 620px) {
     .home__game {
         grid-template-columns: 1fr;
